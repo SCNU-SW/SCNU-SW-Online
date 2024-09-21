@@ -51,7 +51,9 @@ date: 2024/07/09
 
 项目开源地址是：https://github.com/SCNU-SW/SCNU-SW-Online
 
+华师手册交流群，可在群内反馈和沟通交流，群号：980148311
 
+![](./images/qq.webp)
 
 
 

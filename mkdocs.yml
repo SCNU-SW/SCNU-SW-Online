@@ -8,6 +8,46 @@ edit_uri: https://scnusw.online/edit-landing/?ref=
 nav:
   - 简介:
     - Getting Started: index.md
+    - 食用指南: intro/ug.md
+    - 如何参与: intro/htc.md
+    - 格式手册: intro/format.md
+    - 致谢: intro/ack.md
+    # - 关于: intro/about.md
+  - 校历:
+    - 2024-2025: calendar/24-25.md
+  - 黄页:
+    - 黄页: contact/index.md
+  - 校园学习:
+    - 校园学习: study/index.md
+    # - 行知书院:
+    - 数据科学与工程学院:
+      - 课程学习: study/dse/course.md
+      - 生涯规划: 
+        - 考研篇: study/dse/pgexam.md
+        - 保研篇: study/dse/pgrec.md
+      - 工具软件:
+        - LaTeX 入门: study/dse/latex.md
+        - Git: study/dse/git.md
+      - 竞赛:
+        # - 数学建模: study/dse/sxjm.md
+        - 算法竞赛: 
+          - 学习路线: study/dse/roadmap.md
+          - 学习资源: study/dse/resources.md
+      #     - 蓝桥杯: study/dse/lanqiao.md
+      #     - 天梯赛: study/dse/gplt.md
+      #     - XCPC: study/dse/xcpc.md
+      # - 科研项目: study/dse/research.md
+    # - 材料与新能源学院:
+    # - 职业教育学院:
+    # - 基础教育学院:
+    # - 商学院:
+    # - 创意设计学院:
+  # - 校园生活:
+  #   - 校园生活: life/index.md
+  - 社团活动:
+    - 社团活动: organizations/index.md
+  # - 关于实习:
+  #   - 经验之谈: internship/index.md
 
 
 
@@ -118,4 +158,5 @@ extra_javascript:
 extra:
   copyright: <a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a>
   generator: false
+
 
