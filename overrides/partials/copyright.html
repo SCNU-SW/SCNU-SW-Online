@@ -1,0 +1,23 @@
+<div class="md-copyright">
+  {% if config.copyright %}
+    <div class="md-copyright__highlight">
+      {{ config.copyright }}
+    </div>
+  {% endif %}
+  {% if not config.extra.generator == false %}
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+      <div id="miitbeian"></div>
+    </a>
+  {% endif %}
+</div>
+<div style="float:right" class="build_date_utc">
+    最近更新：<span id="build_date_utc">{{ build_date_utc.strftime('%Y-%m-%d %H:%M:%S') }}</span>
+</div>
+
+<script>
+    const utcElement = document.getElementById('build_date_utc');
+    const utcDate = new Date(utcElement.textContent + ' UTC');
+    utcElement.textContent = utcDate.toLocaleString();
+</script>
