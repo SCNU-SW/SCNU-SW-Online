@@ -22,7 +22,7 @@ date: 2024/07/09
 
 1. 邮件提交
 
-	发送邮件到 support@scnusw.online
+	发送邮件到 contact@scnusw.online
 
 2. 代理提交
 
