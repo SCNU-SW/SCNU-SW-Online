@@ -722,13 +722,11 @@ $$
 \text{Dispersal in the contemporary united states}
 $$
 
-，而 `Dispersal in the contemporary {U}nited {S}tates` 的生成效果为
+而 `Dispersal in the contemporary {U}nited {S}tates` 的生成效果为
 
 $$
 \text{Dispersal in the contemporary United States}
 $$
-
-。
 
 你可以手写 BibTeX 文件，也可以使用软件来生成。
 
