@@ -716,7 +716,19 @@ Field name = {field contents},
 
 你可以使用 LaTeX 命令来生成特殊的文字效果。比如意大利斜体可以使用 `\emph{Rattus norvegicus}`。
 
-对于需要大写的字母，请用花括号包裹起来。BibTeX 会自动把标题中除第一个字母外所有大写字母替换为小写。比如 `Dispersal in the contemporary United States` 的生成效果为 $\text{Dispersal in the contemporary united states}$，而 `Dispersal in the contemporary {U}nited {S}tates` 的生成效果为 $\text{Dispersal in the contemporary United States}$。
+对于需要大写的字母，请用花括号包裹起来。BibTeX 会自动把标题中除第一个字母外所有大写字母替换为小写。比如 `Dispersal in the contemporary United States` 的生成效果为
+
+$$
+\text{Dispersal in the contemporary united states}
+$$
+
+，而 `Dispersal in the contemporary {U}nited {S}tates` 的生成效果为
+
+$$
+\text{Dispersal in the contemporary United States}
+$$
+
+。
 
 你可以手写 BibTeX 文件，也可以使用软件来生成。
 
