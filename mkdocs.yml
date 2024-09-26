@@ -62,7 +62,7 @@ theme:
     edit: material/pencil
     logo: material/bookshelf
   
-  favicon: images/favicon.png
+  favicon: favicon.ico
   
   palette:
     # Palette toggle for light mode
