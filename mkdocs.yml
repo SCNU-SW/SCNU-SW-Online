@@ -35,8 +35,6 @@ nav:
           - 学习路线: study/dse/roadmap.md
           - 学习资源: study/dse/resources.md
       #     - 蓝桥杯: study/dse/lanqiao.md
-      #     - 天梯赛: study/dse/gplt.md
-      #     - XCPC: study/dse/xcpc.md
       # - 科研项目: study/dse/research.md
     # - 材料与新能源学院:
     # - 职业教育学院:
@@ -152,7 +150,8 @@ extra_css:
 
 extra_javascript:
   - javascripts/mathjax.js
-  - https://mirrors.sustech.edu.cn/cdnjs//ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
+  - https://unpkg.zhimg.com/mathjax@3/es5/tex-mml-chtml.js
+  # - https://mirrors.sustech.edu.cn/cdnjs//ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.js
   # - javascripts/analytics.js
 
 

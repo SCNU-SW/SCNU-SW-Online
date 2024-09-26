@@ -18,7 +18,7 @@ date: 2024/07/09
 
 - [CS自学指南](https://csdiy.wiki)
 
-感谢南科大提供 [CDNJS Mirrors](https://mirrors.sustech.edu.cn) 服务。
+<!-- 感谢南科大提供 [CDNJS Mirrors](https://mirrors.sustech.edu.cn) 服务。 -->
 
 华师手册项目开源于 [Github](https://github.com)，目前托管在 [Vercel](https://vercel.com) 上。
 
