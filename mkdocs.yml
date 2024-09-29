@@ -93,7 +93,7 @@ theme:
 
   font:
     text: Fira Sans
-    code: Fira Mono
+    code: Fira Code
 
 
 # Extensions
