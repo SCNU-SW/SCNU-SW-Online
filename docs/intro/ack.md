@@ -1,6 +1,6 @@
 ---
 author: 
-updated: 2024/08/04
+updated: 2024/09/29
 date: 2024/07/09
 ---
 
@@ -22,7 +22,7 @@ date: 2024/07/09
 
 华师手册项目开源于 [Github](https://github.com)，目前托管在 [Vercel](https://vercel.com) 上。
 
-同时，感谢所有手册的贡献者：
+手册的贡献者：
 
 - 
 

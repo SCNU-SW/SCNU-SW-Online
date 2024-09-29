@@ -1,7 +1,7 @@
 ---
 title: Edit landing
 author: 
-updated: 2024/08/01
+updated: 2024/09/29
 date: 2024/07/09
 ---
 
@@ -15,6 +15,7 @@ date: 2024/07/09
 
 ???+ 敬请留意
 	- 请您记得在文件头的 author 字段后方留下你的署名
+	- 在致谢页 `ack.md` 中的贡献者部分，可附上指向您个人的链接
 
 <a id="btn-startedit" style="padding: 0.75em 1.25em; display: inline-block; line-height: 1; text-decoration: none; white-space: nowrap; cursor: pointer; border: 1px solid #6190e8; border-radius: 5px; background-color: #6190e8; color: #fff; outline: none; font-size: 0.75em;">开始编辑</a>
 
