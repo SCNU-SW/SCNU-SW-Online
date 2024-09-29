@@ -1,5 +1,3 @@
-{% set disqus = config.extra.disqus %} {% if page and page.meta and page.meta.disqus is string %} {% set disqus = page.meta.disqus
-  %} {% endif %}
 {% set copyright = config.extra.copyright %} {% if page and page.meta and page.meta.copyright is string %} {% set copyright = page.meta.copyright
   %} {% endif %}
 {% set authors = 'SCNU-SW-Online' %} {% if page and page.meta and page.meta.author is string %} {% set authors = page.meta.author
@@ -10,8 +8,4 @@
   <span><i class="md-icon">{% include ".icons/material/account-multiple.svg" %}</i>本页贡献者：</span><span class="page_contributors">{{ authors }}</span><br>
   <span><i class="md-icon">{% include ".icons/material/copyright.svg" %}</i>本页全部内容在 <strong>{{ copyright }}</strong> 协议之条款下提供，附加条款亦可能应用</span>
 </blockquote>
-{% if not page.is_homepage and disqus %}
-{% set pageID = page.title | default("404", true) %}
-<div id="__comments" class="giscus" data-no-instant></div>
-{% include "partials/javascripts/comments.html" %}
-{% endif %}
+
