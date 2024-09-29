@@ -38,6 +38,9 @@ jobs:
       - run: pip install mkdocs-material 
       - run: mkdocs build
 
+      - name: Copy vercel.json
+        run: cp vercel.json site/
+
       - name: Push
         uses: s0/git-publish-subdir-action@develop
         env:

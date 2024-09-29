@@ -36,6 +36,9 @@ jobs:
       - run: mkdocs gh-deploy --force
       - run: mkdocs build
 
+      - name: Copy vercel.json
+        run: cp vercel.json site/
+
       - name: Push to preview
         uses: s0/git-publish-subdir-action@develop
         env:
