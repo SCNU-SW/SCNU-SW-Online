@@ -7,6 +7,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   preview:
@@ -41,7 +42,7 @@ jobs:
       - name: Copy vercel.json
         run: cp vercel.json site/
 
-      - name: Push
+      - name: Push to preview
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: ${{ secrets.REPO_SSH_URL }}
@@ -49,3 +50,15 @@ jobs:
           FOLDER: site
           SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
           SQUASH_HISTORY: true
+
+      - name: Waiting for Vercel to deploy the webpage
+        run: sleep 10
+
+      - name: Install GitHub CLI
+        run: sudo apt-get install gh
+
+      - name: Add PR Comment
+        run: |
+          gh pr comment ${{ github.event.pull_request.number }} --body " [预览网页](https://preview.scnusw.online) 构建完成，请您检查实际效果，并持续跟进审核或修改意见。"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
