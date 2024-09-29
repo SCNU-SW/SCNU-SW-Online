@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <script>
+    if (window.location.hostname === 'preview.scnusw.online') {
+      document.head.insertAdjacentHTML('afterbegin', '<meta name="robots" content="noindex, nofollow">');
+    }
+  </script>
+{% endblock %}
