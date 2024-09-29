@@ -1,6 +1,6 @@
 ---
 author: OI-Wiki, SCNU-SW-Online
-updated: 2024/08/01
+updated: 2024/09/29
 date: 2024/07/09
 ---
 
@@ -17,6 +17,12 @@ date: 2024/07/09
 3.  **查阅相关资料**：为条目添加内容或进行修订时，建议您先查阅权威文献和资料，确保信息准确无误。也欢迎您在我们的社区提出问题，与其他编者交流讨论。
 
 ## 参与方式
+
+???+ warning
+    ==**在开始编写一段内容之前，请查阅 [Issues](https://github.com/SCNU-SW/SCNU-SW-Online/issues)，确认没有别人在做相同的工作之后，开个 [新 issue](https://github.com/SCNU-SW/SCNU-SW-Online/issues/new) 记录待编写的内容。**==
+
+???+ tip
+    Issues 中还有一些待修复或解决的问题，从这里领取任务是一个不错的选择！
 
 **如果您不太了解 Markdown 语法，或者没有 Github 账号，可以通过以下方式提交。**
 
@@ -69,6 +75,9 @@ date: 2024/07/09
 
 #### 新增内容
 
+???+ warning
+    ==**在开始编写一段内容之前，请查阅 [Issues](https://github.com/SCNU-SW/SCNU-SW-Online/issues)，确认没有别人在做相同的工作之后，开个 [新 issue](https://github.com/SCNU-SW/SCNU-SW-Online/issues/new) 记录待编写的内容。**==
+
 1.  打开 [SCNU-SW/SCNU-SW-Online](https://github.com/SCNU-SW/SCNU-SW-Online) 仓库，点击键盘上的<kbd>.</kbd>按钮（或者将 URL 中的 `github.com` 更改为 `github.dev`）[^ref1]，进入 GitHub 的网页版 VS Code 编辑器；
 2. 在您想要新增内容的分类文件夹中新建 markdown 文档，将文档内容粘贴到网页编辑器上。（或直接上传 markdown 文档）
 3. 将 Markdown 文档内引用的图片上传到该分类的 `images` 文件夹中，注意在文档内引用的路径用相对路径如 `![](./images/format-1.png)` 。
@@ -88,7 +97,7 @@ date: 2024/07/09
 
 ### 在构建的网页中预览变更
 
-在 Pull Request 页面下方的 Check box 提示 preview 构建完成后（一分钟左右），可访问 [preview.scnusw.online](https://preview.scnusw.online) 页面预览效果。
+在 Pull Request 页面下方的 Check box 提示 preview 构建完成后（半分钟左右），可访问 [preview.scnusw.online](https://preview.scnusw.online) 页面预览效果。
 
 ### 使用 Git 在本地进行编辑
 
@@ -133,10 +142,10 @@ date: 2024/07/09
 
 修改类型分为如下几类：
 
--   `feat`：用于添加内容的情况。
--   `fix`：用于修正现有内容错误的情况。
--   `refactor`：用于对一个页面进行重构（较大规模的更改）的情况。
--   `revert`：用于回退之前更改的情况。
+-   `feat`：用于添加新功能的情况。
+-   `fix`：用于修正现有非内容错误的情况。
+-   `docs`：用于新增手册内容或修改错误内容的情况。
+-   `chore`：用于非功能性变更或对代码库进行的一般维护工作。
 
 ### Pull Request 信息格式规范
 
@@ -154,17 +163,17 @@ date: 2024/07/09
 
 修改类型分为如下几类：
 
--   `feat`：用于添加内容的情况。
--   `fix`：用于修正现有内容错误的情况。
--   `refactor`：用于对一个页面进行重构（较大规模的更改）的情况。
--   `revert`：用于回退之前更改的情况。
+-   `feat`：用于添加新功能的情况。
+-   `fix`：用于修正现有非内容错误的情况。
+-   `docs`：用于新增手册内容或修改错误内容的情况。
+-   `chore`：用于非功能性变更或对代码库进行的一般维护工作。
 
 示例：
 
--   `fix(ds/persistent-seg): 修改代码注释使描述更清晰`
+-   `docs: Update edit-landing.md and ack.md`
 -   `fix: tools/judger/index 不在目录中 (#3709)`
--   `feat(math/poly/fft): better proof`
--   `refactor(ds/stack): 整理页面内容`
+-   `feat: Add rules to prevent indexing and following on preview site`
+-   `chore: Update code font in mkdocs.yml`
 
 ## 参考资料与注释
 
