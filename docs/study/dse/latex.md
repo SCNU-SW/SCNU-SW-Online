@@ -1,7 +1,9 @@
 ---
+title: Latex
 author: OI-Wiki
 updated: 2024/07/12
 date: 2024/07/09
+description: 本文介绍了LaTeX排版系统的基本概念、安装和配置方法，以及如何使用LaTeX进行文档排版，包括公式、表格和图表的插入。
 ---
 
 ## 介绍

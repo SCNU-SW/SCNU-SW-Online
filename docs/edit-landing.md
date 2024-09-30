@@ -3,6 +3,7 @@ title: Edit landing
 author: 
 updated: 2024/09/29
 date: 2024/07/09
+description: 编辑华师手册前需要了解的注意事项和步骤。
 ---
 
 ## 编辑前须知

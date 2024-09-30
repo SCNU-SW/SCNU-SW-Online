@@ -1,7 +1,9 @@
 ---
+title: Git
 author: OI-Wiki
 updated: 2024/07/12
 date: 2024/07/09
+description: 本文介绍了Git版本控制系统的基本概念、安装和配置方法。
 ---
 
 ???+ note
@@ -250,7 +252,7 @@ $ git commit -a -m "feat: update README.md"
 
 下面用一张图来解释刚才的操作过程。
 
-![](./images/git1.png)
+![git操作过程1](./images/git1.png)
 
 `master` 分支被标红，表明在这几次操作后，它是当前分支（即 HEAD 指向的位置）。
 
@@ -274,7 +276,7 @@ Merge made by the 'recursive' strategy.
  create mode 100644 aplusb.cpp
 ```
 
-![](./images/git2.png)
+![git操作过程2](./images/git2.png)
 
 这次合并具体是怎么执行的呢？
 

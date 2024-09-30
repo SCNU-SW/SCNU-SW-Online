@@ -1,7 +1,9 @@
 ---
+title: 如何参与
 author: OI-Wiki, SCNU-SW-Online
 updated: 2024/09/29
 date: 2024/07/09
+description: 本文档详细介绍了如何参与华师手册的编写和贡献流程，包括编辑单个页面和多个页面的步骤，以及 Pull Request 的规范方法。
 ---
 
 🎉👍 首先，感谢您抽出宝贵时间为 **华师手册** 做出贡献！ 🎉👍
@@ -80,7 +82,7 @@ date: 2024/07/09
 
 1.  打开 [SCNU-SW/SCNU-SW-Online](https://github.com/SCNU-SW/SCNU-SW-Online) 仓库，点击键盘上的<kbd>.</kbd>按钮（或者将 URL 中的 `github.com` 更改为 `github.dev`）[^ref1]，进入 GitHub 的网页版 VS Code 编辑器；
 2. 在您想要新增内容的分类文件夹中新建 markdown 文档，将文档内容粘贴到网页编辑器上。（或直接上传 markdown 文档）
-3. 将 Markdown 文档内引用的图片上传到该分类的 `images` 文件夹中，注意在文档内引用的路径用相对路径如 `![](./images/format-1.png)` 。
+3. 将 Markdown 文档内引用的图片上传到该分类的 `images` 文件夹中，注意在文档内引用的路径用相对路径如 `![Alt](./images/format-1.png)` 。
 4.  在编辑器中作出对页面源文件的更改，可以使用页面右上方的预览按钮（或按下<kbd>Ctrl+K</kbd><kbd>V</kbd>快捷键）在右侧打开预览界面；
 5.  修改完成后使用左侧的 Source Control 选项卡，并按照本文中 [Commit 信息格式规范](#Commit-信息格式规范) 填写 commit 信息并提交，提交时会提示是否创建此仓库的分支，点击绿色的 **Fork Repository** 按钮即可。
 6.  提交后会在网页上方的中央弹出一个提示框，在第一次的提示框内填写标题，第二次的提示框内填写此提交要提交到的仓库内分支名称，之后右下角会弹出一个提示框，内容类似于 `Created Pull Request #1 for SCNU-SW/SCNU-SW-Online.`，点击蓝字链接即可查看该 Pull Request。
