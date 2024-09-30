@@ -1,4 +1,4 @@
-- [ ] 我已认真阅读 **编辑前须知** ，并遵循了[如何参与](https://scnusw.online/intro/htc/)及[格式手册](https://scnusw.online/intro/format/)的相应规范。
+- [ ] 我已阅读 **[贡献指南](https://github.com/SCNU-SW/SCNU-SW-Online/blob/main/.github/CONTRIBUTING.md)** 和 **[社区公约](https://github.com/SCNU-SW/SCNU-SW-Online/blob/main/CODE_OF_CONDUCT.md)** ，并遵循了 **[如何参与](https://scnusw.online/intro/htc/)** 及 **[格式手册](https://scnusw.online/intro/format/)** 的相应规范。
 
 <!-- 完成内容后，将上述 [ ] 替换为 [x]。 -->
 
