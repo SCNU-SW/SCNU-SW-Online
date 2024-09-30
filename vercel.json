@@ -17,6 +17,12 @@
     },
     {
       "source": "/images/qq.webp",
+      "has": [
+        {
+          "type": "host",
+          "value": "scnusw.online"
+        }
+      ],
       "headers": [
         {
           "key": "X-Robots-Tag",
