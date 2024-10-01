@@ -32,12 +32,9 @@ jobs:
           restore-keys: |
             mkdocs-material-
 
-      - run: pip install mkdocs-material 
+      - run: pip install -r requirements.txt
       - run: mkdocs gh-deploy --force
       - run: mkdocs build
-
-      - name: Copy vercel.json
-        run: cp vercel.json site/
 
       - name: Push to preview
         uses: s0/git-publish-subdir-action@develop
