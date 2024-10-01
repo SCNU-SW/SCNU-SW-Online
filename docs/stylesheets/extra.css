@@ -143,3 +143,7 @@ mjx-container>img {
 img {
     border-radius: 12px;
 }
+
+.md-progress {
+    height: 2.5px;
+}
