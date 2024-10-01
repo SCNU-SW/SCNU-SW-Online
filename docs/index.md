@@ -52,7 +52,7 @@ description: 华师手册是一个由华南师范大学学生发起的校园信�
 
 项目开源地址是：https://github.com/SCNU-SW/SCNU-SW-Online
 
-华师手册 [QQ交流群](https://qm.qq.com/q/9LZpNT7TGw) ，可在群内反馈和沟通交流，群号：980148311
+华师手册 **[QQ交流群](https://qm.qq.com/q/9LZpNT7TGw)** ，可在群内反馈和沟通交流，群号：980148311
 ![QQ-QR-code](./images/qq.webp)
 
 
