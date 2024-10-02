@@ -1,6 +1,8 @@
 <!-- Comment system -->
 {% set copyright = config.extra.copyright %} {% if page and page.meta and page.meta.copyright is string %} {% set copyright = page.meta.copyright
   %} {% endif %}
+{% set authors = config.site_author %} {% if page and page.meta and page.meta.author is string %} {% set authors = page.meta.author
+  %} {% endif %}
 <hr><blockquote class="page-copyright">
   <span><i class="md-icon">{% include ".icons/material/wrench.svg" %}</i>本页最近更新：{{ page.meta.updated }}</span></a><br>
   <span><i class="md-icon">{% include ".icons/material/pencil.svg" %}</i>发现错误？想一起完善？ <a href="{{ page.edit_url }}" title="{{ lang.t('edit.link.title') }}" class="page_edit_url" style="font-weight:bold">即刻编辑此页</a></span><br>
