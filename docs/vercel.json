@@ -6,6 +6,10 @@
         {
           "type": "host",
           "value": "preview.scnusw.online"
+        },
+        {
+          "type": "host",
+          "value": "scnu-sw.github.io"
         }
       ],
       "headers": [
