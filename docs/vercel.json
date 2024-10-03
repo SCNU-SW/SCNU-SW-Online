@@ -16,21 +16,6 @@
       ]
     },
     {
-      "source": "/(.*)",
-      "has": [
-        {
-          "type": "host",
-          "value": "scnu-sw.github.io"
-        }
-      ],
-      "headers": [
-        {
-          "key": "X-Robots-Tag",
-          "value": "noindex, nofollow"
-        }
-      ]
-    },
-    {
       "source": "/images/qq.webp",
       "has": [
         {
