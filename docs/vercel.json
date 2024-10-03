@@ -6,7 +6,18 @@
         {
           "type": "host",
           "value": "preview.scnusw.online"
-        },
+        }
+      ],
+      "headers": [
+        {
+          "key": "X-Robots-Tag",
+          "value": "noindex, nofollow"
+        }
+      ]
+    },
+    {
+      "source": "/(.*)",
+      "has": [
         {
           "type": "host",
           "value": "scnu-sw.github.io"
