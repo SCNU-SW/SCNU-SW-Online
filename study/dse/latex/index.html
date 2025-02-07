@@ -1,0 +1,3083 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="本文介绍了LaTeX排版系统的基本概念、安装和配置方法，以及如何使用LaTeX进行文档排版，包括公式、表格和图表的插入。">
+      
+      
+        <meta name="author" content="OI-Wiki">
+      
+      
+        <link rel="canonical" href="https://scnusw.online/study/dse/latex/">
+      
+      
+        <link rel="prev" href="../pgrec/">
+      
+      
+        <link rel="next" href="../git/">
+      
+      
+      <link rel="icon" href="../../../favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.39">
+    
+    
+      
+        <title>Latex - 华师手册</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8c3ca2c6.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Sans:300,300i,400,400i,700,700i%7CFira+Code:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Fira Sans";--md-code-font:"Fira Code"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#介绍" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href="../../.." title="华师手册" class="md-header__button md-logo" aria-label="华师手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            华师手册
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Latex
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="slate" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <!-- Search interface -->
+<div class="md-search" data-md-component="search" role="dialog" aria-label="Search dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+
+      <!-- Search input -->
+      <input
+        type="text"
+        class="md-search__input"
+        name="query"
+        aria-label="搜索"
+        placeholder="搜索"
+        autocapitalize="off"
+        autocorrect="off"
+        autocomplete="off"
+        spellcheck="false"
+        data-md-component="search-query"
+        required
+      />
+
+      <!-- Button to open search -->
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+
+      <!-- Search options -->
+      <nav
+        class="md-search__options"
+        aria-label="查找"
+      >
+
+        <!-- Button to share search -->
+        
+
+        <!-- Button to reset search -->
+        <button
+          type="reset"
+          class="md-search__icon md-icon"
+          title="清空当前内容"
+          aria-label="清空当前内容"
+          tabindex="-1"
+        >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+
+      <!-- Search suggestions -->
+      
+        <div
+          class="md-search__suggest"
+          data-md-component="search-suggest"
+        ></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+
+        <!-- Search results -->
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/SCNU-SW/SCNU-SW-Online" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SCNU-SW-Online
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../.." class="md-tabs__link">
+          
+  
+  简介
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../calendar/24-25/" class="md-tabs__link">
+          
+  
+  校历
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../contact/" class="md-tabs__link">
+          
+  
+  黄页
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+  校园学习
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../organizations/" class="md-tabs__link">
+          
+  
+  社团活动
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../.." title="华师手册" class="md-nav__button md-logo" aria-label="华师手册" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 3v15h3V3zm3 2 4 13 3-1-4-13zM5 5v13h3V5zM3 19v2h18v-2z"/></svg>
+
+    </a>
+    华师手册
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/SCNU-SW/SCNU-SW-Online" title="前往仓库" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    SCNU-SW-Online
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    简介
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            简介
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    华师手册
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/ug/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    食用指南
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/htc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    如何参与
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/format/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    格式手册
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../intro/ack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    致谢
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    校历
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            校历
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../calendar/24-25/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    2024-2025
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    黄页
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            黄页
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../contact/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    黄页
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    校园学习
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            校园学习
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    校园学习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    数据科学与工程学院
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            数据科学与工程学院
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../course/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    课程学习
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_2" id="__nav_4_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    生涯规划
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            生涯规划
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pgexam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    考研篇
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../pgrec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    保研篇
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_3" id="__nav_4_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    工具软件
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            工具软件
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    LaTeX 入门
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    LaTeX 入门
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#介绍" class="md-nav__link">
+    <span class="md-ellipsis">
+      介绍
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#什么是-LaTeX" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是 LaTeX
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#在开始之前" class="md-nav__link">
+    <span class="md-ellipsis">
+      在开始之前
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一些概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#环境配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#文档结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      文档结构
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文档结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基本要素" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本要素
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#处理问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      处理问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#添加文档标题" class="md-nav__link">
+    <span class="md-ellipsis">
+      添加文档标题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#章节" class="md-nav__link">
+    <span class="md-ellipsis">
+      章节
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#创建标签" class="md-nav__link">
+    <span class="md-ellipsis">
+      创建标签
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#生成目录TOC" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成目录（TOC）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#文字处理" class="md-nav__link">
+    <span class="md-ellipsis">
+      文字处理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文字处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#中文字体支持" class="md-nav__link">
+    <span class="md-ellipsis">
+      中文字体支持
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#字体效果" class="md-nav__link">
+    <span class="md-ellipsis">
+      字体效果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#彩色字体" class="md-nav__link">
+    <span class="md-ellipsis">
+      彩色字体
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#字体大小" class="md-nav__link">
+    <span class="md-ellipsis">
+      字体大小
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#段落缩进" class="md-nav__link">
+    <span class="md-ellipsis">
+      段落缩进
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#列表" class="md-nav__link">
+    <span class="md-ellipsis">
+      列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#注释和空格" class="md-nav__link">
+    <span class="md-ellipsis">
+      注释和空格
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#特殊字符" class="md-nav__link">
+    <span class="md-ellipsis">
+      特殊字符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#表格" class="md-nav__link">
+    <span class="md-ellipsis">
+      表格
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="表格">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#实践" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#图表" class="md-nav__link">
+    <span class="md-ellipsis">
+      图表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="图表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#实践_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      公式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#插入公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      插入公式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#数学符号" class="md-nav__link">
+    <span class="md-ellipsis">
+      数学符号
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数学符号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#上标和下标" class="md-nav__link">
+    <span class="md-ellipsis">
+      上标和下标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分数" class="md-nav__link">
+    <span class="md-ellipsis">
+      分数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#根号" class="md-nav__link">
+    <span class="md-ellipsis">
+      根号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#求和与积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      求和与积分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#希腊字母" class="md-nav__link">
+    <span class="md-ellipsis">
+      希腊字母
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实践_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#参考文献" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考文献
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="参考文献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#介绍_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      介绍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#BibTeX-文件类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      BibTeX 文件类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#插入文献列表" class="md-nav__link">
+    <span class="md-ellipsis">
+      插入文献列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考文献标注" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考文献标注
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#引用格式" class="md-nav__link">
+    <span class="md-ellipsis">
+      引用格式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="引用格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#数字标号引用" class="md-nav__link">
+    <span class="md-ellipsis">
+      数字标号引用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作者日期引用" class="md-nav__link">
+    <span class="md-ellipsis">
+      作者日期引用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#其他引用格式" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他引用格式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实践_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#更多阅读" class="md-nav__link">
+    <span class="md-ellipsis">
+      更多阅读
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../git/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Git
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_4" id="__nav_4_2_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    竞赛
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_2_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_4">
+            <span class="md-nav__icon md-icon"></span>
+            竞赛
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_2_4_1" id="__nav_4_2_4_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    算法竞赛
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_4_2_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_2_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            算法竞赛
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../roadmap/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    学习路线
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    学习资源
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_3" id="__nav_4_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    商学院
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_3">
+            <span class="md-nav__icon md-icon"></span>
+            商学院
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ft/CryptQB/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    现代密码学题库
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    社团活动
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            社团活动
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../organizations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    社团活动
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#介绍" class="md-nav__link">
+    <span class="md-ellipsis">
+      介绍
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="介绍">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#什么是-LaTeX" class="md-nav__link">
+    <span class="md-ellipsis">
+      什么是 LaTeX
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#在开始之前" class="md-nav__link">
+    <span class="md-ellipsis">
+      在开始之前
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#一些概念" class="md-nav__link">
+    <span class="md-ellipsis">
+      一些概念
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#环境配置" class="md-nav__link">
+    <span class="md-ellipsis">
+      环境配置
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#文档结构" class="md-nav__link">
+    <span class="md-ellipsis">
+      文档结构
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文档结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#基本要素" class="md-nav__link">
+    <span class="md-ellipsis">
+      基本要素
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#处理问题" class="md-nav__link">
+    <span class="md-ellipsis">
+      处理问题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#添加文档标题" class="md-nav__link">
+    <span class="md-ellipsis">
+      添加文档标题
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#章节" class="md-nav__link">
+    <span class="md-ellipsis">
+      章节
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#创建标签" class="md-nav__link">
+    <span class="md-ellipsis">
+      创建标签
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#生成目录TOC" class="md-nav__link">
+    <span class="md-ellipsis">
+      生成目录（TOC）
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#文字处理" class="md-nav__link">
+    <span class="md-ellipsis">
+      文字处理
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="文字处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#中文字体支持" class="md-nav__link">
+    <span class="md-ellipsis">
+      中文字体支持
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#字体效果" class="md-nav__link">
+    <span class="md-ellipsis">
+      字体效果
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#彩色字体" class="md-nav__link">
+    <span class="md-ellipsis">
+      彩色字体
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#字体大小" class="md-nav__link">
+    <span class="md-ellipsis">
+      字体大小
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#段落缩进" class="md-nav__link">
+    <span class="md-ellipsis">
+      段落缩进
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#列表" class="md-nav__link">
+    <span class="md-ellipsis">
+      列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#注释和空格" class="md-nav__link">
+    <span class="md-ellipsis">
+      注释和空格
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#特殊字符" class="md-nav__link">
+    <span class="md-ellipsis">
+      特殊字符
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#表格" class="md-nav__link">
+    <span class="md-ellipsis">
+      表格
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="表格">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#实践" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#图表" class="md-nav__link">
+    <span class="md-ellipsis">
+      图表
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="图表">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#实践_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      公式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="公式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#插入公式" class="md-nav__link">
+    <span class="md-ellipsis">
+      插入公式
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#数学符号" class="md-nav__link">
+    <span class="md-ellipsis">
+      数学符号
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="数学符号">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#上标和下标" class="md-nav__link">
+    <span class="md-ellipsis">
+      上标和下标
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#分数" class="md-nav__link">
+    <span class="md-ellipsis">
+      分数
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#根号" class="md-nav__link">
+    <span class="md-ellipsis">
+      根号
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#求和与积分" class="md-nav__link">
+    <span class="md-ellipsis">
+      求和与积分
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#希腊字母" class="md-nav__link">
+    <span class="md-ellipsis">
+      希腊字母
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实践_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#参考文献" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考文献
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="参考文献">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#介绍_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      介绍
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#BibTeX-文件类型" class="md-nav__link">
+    <span class="md-ellipsis">
+      BibTeX 文件类型
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#插入文献列表" class="md-nav__link">
+    <span class="md-ellipsis">
+      插入文献列表
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#参考文献标注" class="md-nav__link">
+    <span class="md-ellipsis">
+      参考文献标注
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#引用格式" class="md-nav__link">
+    <span class="md-ellipsis">
+      引用格式
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="引用格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#数字标号引用" class="md-nav__link">
+    <span class="md-ellipsis">
+      数字标号引用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#作者日期引用" class="md-nav__link">
+    <span class="md-ellipsis">
+      作者日期引用
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#其他引用格式" class="md-nav__link">
+    <span class="md-ellipsis">
+      其他引用格式
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#实践_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      实践
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#更多阅读" class="md-nav__link">
+    <span class="md-ellipsis">
+      更多阅读
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://scnusw.online/edit-landing/?ref=/study/dse/latex.md" title="编辑此页" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg>
+    </a>
+  
+  
+
+
+  <h1>LaTeX 入门</h1>
+
+<h2 id="介绍">介绍<a class="headerlink" href="#介绍" title="Permanent link">&para;</a></h2>
+<h3 id="什么是-LaTeX">什么是 LaTeX<a class="headerlink" href="#什么是-LaTeX" title="Permanent link">&para;</a></h3>
+<p>LaTeX（读作/ˈlɑːtɛx/或/ˈleɪtɛx/）是一个让你的文档看起来更专业的排版系统，而不是文字处理器。它尤其适合处理篇幅较长、结构严谨的文档，并且十分擅长处理公式表达。它是免费的软件，对大多数操作系统都适用。</p>
+<p>LaTeX 基于 TeX（Donald Knuth 在 1978 年为数字化排版设计的排版系统）。TeX 是一种电脑能够处理的低级语言，但大多数人发现它很难使用。LaTeX 正是为了让它变得更加易用而设计的。目前 LaTeX 的版本是 LaTeX 2e。</p>
+<p>如果你习惯于使用微软的 Office Word 处理文档，那么你会觉得 LaTeX 的工作方式让你很不习惯。Word 是典型的「所见即所得」的编辑器，你可以在编排文档的时侯查看到最终的排版效果。但使用 LaTeX 时你并不能方便地查看最终效果，这使得你专注于内容而不是外观的调整。</p>
+<p>一个 LaTeX 文档是一个以 <code>.tex</code> 结尾的文本文件，可以使用任意的文本编辑器编辑，比如 Notepad，但对于大多数人而言，使用一个合适的 LaTeX 编辑器会使得编辑的过程容易很多。在编辑的过程中你可以标记文档的结构。完成后你可以进行编译——这意味着将它转化为另一种格式的文档。它支持多种格式，但最常用的是 PDF 文档格式。</p>
+<h3 id="在开始之前">在开始之前<a class="headerlink" href="#在开始之前" title="Permanent link">&para;</a></h3>
+<p>下面列出在本文中使用到的记号：</p>
+<ul>
+<li>希望你实施的操作会被打上一个箭头 <span class="arithmatex">\(\rightarrow\)</span>；</li>
+<li>你输入的字符会被装进代码块中；</li>
+<li>菜单命令与按钮的名称会被标记为 <strong>粗体</strong>。</li>
+</ul>
+<h3 id="一些概念">一些概念<a class="headerlink" href="#一些概念" title="Permanent link">&para;</a></h3>
+<p>如果需要编写 LaTeX 文档，你需要安装一个「发行版」，常用的发行版有 <a href="http://tug.org/texlive/">TeX Live</a>、<a href="https://miktex.org/">MikTeX</a> 和适用于 macOS 用户的 MacTeX（实际上是 TeX Live 的 macOS 版本），至于 <a href="http://www.ctex.org/">CTeX</a> 则现在不推荐使用。TeX Live 和 MacTeX 带有几乎所有的 LaTeX 宏包；而 MikTeX 只带有少量必须的宏包，其他宏包将在需要时安装。</p>
+<p>TeX Live 和 MikTeX 都带有 TeXworks 编辑器，你也可以安装功能更多的 TeXstudio 编辑器，或者自行配置 Visual Studio Code 或 Notepad++ 等编辑器。下文所使用的编辑器是运行在 Windows 7 上的 TeXworks。</p>
+<p>大部分发行版都带有多个引擎，如 pdfTeX 和 XeTeX。对于中文用户，推荐使用 XeTeX 以获得 Unicode 支持。</p>
+<p>TeX 有多种格式，如 Plain TeX 和 LaTeX。现在一般使用 LaTeX 格式。所以，你需要使用与你所使用的格式打包在一起的引擎。如对于 pdfTeX，你需要使用 pdfLaTeX，对于 XeTeX 则是 XeLaTeX。</p>
+<p>扩展阅读：<a href="https://liam.page/2018/11/26/introduction-to-TeX-engine-format-and-distribution/">TeX 引擎、格式、发行版之介绍</a>。</p>
+<h3 id="环境配置">环境配置<a class="headerlink" href="#环境配置" title="Permanent link">&para;</a></h3>
+<p>对于 Windows 用户，你需要下载 TeX Live 或 MikTeX。国内用户可以使用 <a href="https://mirrors.tuna.tsinghua.edu.cn/">清华大学 TUNA 镜像站</a>，请点击页面右侧的「获取下载链接」按钮，并选择「应用软件」标签下的「TeX 排版系统」即可下载 TeX Live 或 MikTeX 的安装包，其中 TeX Live 的安装包是一个 ISO 文件，需要挂载后以管理员权限执行 <code>install-tl-advanced.bat</code>。</p>
+<p>对于 macOS 用户，清华大学 TUNA 镜像站同样提供 MacTeX 和 macOS 版 MikTeX 的下载。</p>
+<p>对于 Linux 用户，如果使用 TeX Live，则同样下载 ISO 文件，执行 <code>install-tl</code> 脚本；如果使用 MikTeX，则按照 <a href="https://miktex.org/download#unx">官方文档</a> 进行安装。</p>
+<h2 id="文档结构">文档结构<a class="headerlink" href="#文档结构" title="Permanent link">&para;</a></h2>
+<h3 id="基本要素">基本要素<a class="headerlink" href="#基本要素" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\rightarrow\)</span> 打开 TeXworks。（也可以搭配其他编辑器，如VSCode）</p>
+<p>一个新的文档会被自动打开。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 进入 <strong>Format</strong> 菜单，选择 <strong>Line Numbers</strong>。</p>
+<p>行号并不是要素，但它可以帮助你比较代码与屏幕信息，找到错误。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 进入 <strong>Format</strong> 菜单，选择 <strong>Syntax Coloring</strong>，然后选择 <strong>LaTeX</strong>。</p>
+<p>语法色彩会高亮代码，使得代码更加易读。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 输入以下文字：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="na">[a4paper, 12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+  A sentence of text.
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><code>\documentclass</code> 命令必须出现在每个 LaTeX 文档的开头。花括号内的文本指定了文档的类型。<strong>article</strong> 文档类型适合较短的文章，比如期刊文章和短篇报告。其他文档类型包括 <strong>report</strong>（适用于更长的多章节的文档，比如博士生论文），<strong>proc</strong>（会议论文集），<strong>book</strong> 和 <strong>beamer</strong>。方括号内的文本指定了一些选项——示例中它设置纸张大小为 A4，主要文字大小为 12pt。</p>
+<p><code>\begin{document}</code> 和 <code>\end{document}</code> 命令将你的文本内容包裹起来。任何在 <code>\begin{documnet}</code> 之前的文本都被视为前导命令，会影响整个文档。任何在 <code>\end{document}</code> 之后的文本都会被忽视。</p>
+<p>空行不是必要的，但它可以让长的文档更易读。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 按下 <strong>Save</strong> 按扭；<span class="arithmatex">\(\rightarrow\)</span> 在 <strong>Libraries&gt;Documents</strong> 中新建一个名为 <strong>LaTeX course</strong> 文件夹；<span class="arithmatex">\(\rightarrow\)</span> 将你的文档命名为 <strong>Doc1</strong> 并将其保存为 <strong>TeX document</strong> 放在这个文件夹中。</p>
+<p>将不同的 LaTeX 文档放在不同的目录下，在编译的时候组合多个文件是一个很好的想法。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 确保 typeset 菜单设置为了 <strong>xeLaTeX</strong>。<span class="arithmatex">\(\rightarrow\)</span> 点击 <strong>Typeset</strong> 按扭。</p>
+<p>这时你的源文件会被转换为 PDF 文档，这需要花费一定的时间。在编译结束后，TeXworks 的 PDF 查看器会打开并预览生成的文件。PDF 文件会被自动地保存在与 TeX 文档相同的目录下。</p>
+<h3 id="处理问题">处理问题<a class="headerlink" href="#处理问题" title="Permanent link">&para;</a></h3>
+<p>如果在你的文档中存在错误，TeXworks 无法创建 PDF 文档时，<strong>Typeset</strong> 按扭会变成一个红叉，并且底部的终端输出会保持展开。这时：</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 点击 <strong>Abort typesetting</strong> 按扭。<span class="arithmatex">\(\rightarrow\)</span> 阅读终端输出的内容，最后一行可能会给出行号表示出现错误的位置。<span class="arithmatex">\(\rightarrow\)</span> 找到文档中对应的行并修复错误。<span class="arithmatex">\(\rightarrow\)</span> 再次点击 <strong>Typeset</strong> 按扭尝试编译源文件。</p>
+<h3 id="添加文档标题">添加文档标题<a class="headerlink" href="#添加文档标题" title="Permanent link">&para;</a></h3>
+<p><code>\maketitle</code> 命令可以给文档创建标题。你需要指定文档的标题。如果没有指定日期，就会使用现在的时间，作者是可选的。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 在 <code>\begin{document}</code> 和 命令后紧跟着输入以下文本：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\title</span><span class="nb">{</span>My First Document<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>My Name<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\maketitle</span>
+</code></pre></div></td></tr></table></div>
+<p>你的文档现在长成了这样：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="na">[a4paper, 12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+  <span class="k">\title</span><span class="nb">{</span>My First Document<span class="nb">}</span>
+  <span class="k">\author</span><span class="nb">{</span>My Name<span class="nb">}</span>
+  <span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+  <span class="k">\maketitle</span>
+
+  A sentence of text.
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><span class="arithmatex">\(\rightarrow\)</span> 点击 <strong>Typeset</strong> 按扭，核对生成的 PDF 文档。</p>
+<p>要点笔记：</p>
+<ul>
+<li><code>\today</code> 是插入当前时间的命令。你也可以输入一个不同的时间，比如 <code>\date{November 2013}</code>。</li>
+<li><strong>article</strong> 文档的正文会紧跟着标题之后在同一页上排版。<strong>report</strong> 会将标题置为单独的一页。</li>
+</ul>
+<h3 id="章节">章节<a class="headerlink" href="#章节" title="Permanent link">&para;</a></h3>
+<p>如果需要的话，你可能想将你的文档分为章（Chatpers）、节（Sections）和小节（Subsections）。下列分节命令适用于 <strong>article</strong> 类型的文档：</p>
+<ul>
+<li><code>\section{...}</code></li>
+<li><code>\subsection{...}</code></li>
+<li><code>\subsubsection{...}</code></li>
+<li><code>\paragraph{...}</code></li>
+<li><code>\subparagraph{...}</code></li>
+</ul>
+<p>花括号内的文本表示章节的标题。对于 <strong>report</strong> 和 <strong>book</strong> 类型的文档我们还支持 <code>\chapter{...}</code> 的命令。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 将 "A sentence of text." 替换为以下文本：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
+This is the introduction.
+
+<span class="k">\section</span><span class="nb">{</span>Methods<span class="nb">}</span>
+
+<span class="k">\subsection</span><span class="nb">{</span>Stage 1<span class="nb">}</span>
+The first part of the methods.
+
+<span class="k">\subsection</span><span class="nb">{</span>Stage 2<span class="nb">}</span>
+The second part of the methods.
+
+<span class="k">\section</span><span class="nb">{</span>Results<span class="nb">}</span>
+Here are my results.
+</code></pre></div></td></tr></table></div>
+<p>你的文档会变成</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="na">[a4paper, 12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+  <span class="k">\title</span><span class="nb">{</span>My First Document<span class="nb">}</span>
+  <span class="k">\author</span><span class="nb">{</span>My Name<span class="nb">}</span>
+  <span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+  <span class="k">\maketitle</span>
+
+  <span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
+  This is the introduction.
+
+  <span class="k">\section</span><span class="nb">{</span>Methods<span class="nb">}</span>
+
+  <span class="k">\subsection</span><span class="nb">{</span>Stage 1<span class="nb">}</span>
+  The first part of the methods.
+
+  <span class="k">\subsection</span><span class="nb">{</span>Stage 2<span class="nb">}</span>
+  The second part of the methods.
+
+  <span class="k">\section</span><span class="nb">{</span>Results<span class="nb">}</span>
+  Here are my results.
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><span class="arithmatex">\(\rightarrow\)</span> 点击 <strong>Typeset</strong> 按扭，核对 PDF 文档。应该是长这样的：</p>
+<p><img alt="p1" src="../images/latex-for-beginners-1.png" /></p>
+<h3 id="创建标签">创建标签<a class="headerlink" href="#创建标签" title="Permanent link">&para;</a></h3>
+<p>你可以对任意章节命令创建标签，这样他们可以在文档的其他部分被引用。使用 <code>\label{labelname}</code> 对章节创建标签。然后输入 <code>\ref{labelname}</code> 或者 <code>\pageref{labelname}</code> 来引用对应的章节。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 在 <code>\subsection{Stage 1}</code> 下面另起一行，输入 <code>\label{sec1}</code>。<span class="arithmatex">\(\rightarrow\)</span> 在 <strong>Results</strong> 章节输入 <code>Referring to section \ref{sec1} on page \pageref{sec1}</code>。</p>
+<p>你的文档会变成这样：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="na">[a4paper, 12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+  <span class="k">\title</span><span class="nb">{</span>My First Document<span class="nb">}</span>
+  <span class="k">\author</span><span class="nb">{</span>My Name<span class="nb">}</span>
+  <span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+  <span class="k">\maketitle</span>
+
+  <span class="k">\section</span><span class="nb">{</span>Introduction<span class="nb">}</span>
+  This is the introduction.
+
+  <span class="k">\section</span><span class="nb">{</span>Methods<span class="nb">}</span>
+
+  <span class="k">\subsection</span><span class="nb">{</span>Stage 1<span class="nb">}</span>
+  <span class="k">\label</span><span class="nb">{</span>sec1<span class="nb">}</span> The first part of the methods.
+
+  <span class="k">\subsection</span><span class="nb">{</span>Stage 2<span class="nb">}</span>
+  The second part of the methods.
+
+  <span class="k">\section</span><span class="nb">{</span>Results<span class="nb">}</span>
+  Here are my results. Referring to section <span class="k">\ref</span><span class="nb">{</span>sec1<span class="nb">}</span> on page <span class="k">\pageref</span><span class="nb">{</span>sec1<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>document<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><span class="arithmatex">\(\rightarrow\)</span> 编译并检查 PDF 文档（你可能需要连续编译两次）：</p>
+<p><img alt="p2" src="../images/latex-for-beginners-2.png" /></p>
+<h3 id="生成目录TOC">生成目录（TOC）<a class="headerlink" href="#生成目录TOC" title="Permanent link">&para;</a></h3>
+<p>如果你使用分节命令，那么可以容易地生成一个目录。使用 <code>\tableofcontents</code> 在文档中创建目录。通常我们会在标题的后面建立目录。</p>
+<p>你可能也想也想更改页码为罗马数字（i,ii,iii）。这会确保文档的正文从第 1 页开始。页码可以使用 <code>\pagenumbering{...}</code> 在阿拉伯数字和罗马数字见切换。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 在 <code>\maketitle</code> 之后输入以下内容：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\pagenumbering</span><span class="nb">{</span>roman<span class="nb">}</span>
+<span class="k">\tableofcontents</span>
+<span class="k">\newpage</span>
+<span class="k">\pagenumbering</span><span class="nb">{</span>arabic<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><code>\newpage</code> 命令会另起一个页面，这样我们就可以看到 <code>\pagenumbering</code> 命令带来的影响了。你的文档的前 14 行长这样：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\documentclass</span><span class="na">[a4paper, 12pt]</span><span class="nb">{</span>article<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>document<span class="nb">}</span>
+
+<span class="k">\title</span><span class="nb">{</span>My First Document<span class="nb">}</span>
+<span class="k">\author</span><span class="nb">{</span>My Name<span class="nb">}</span>
+<span class="k">\date</span><span class="nb">{</span><span class="k">\today</span><span class="nb">}</span>
+<span class="k">\maketitle</span>
+
+<span class="k">\pagenumbering</span><span class="nb">{</span>roman<span class="nb">}</span>
+<span class="k">\tableofcontents</span>
+<span class="k">\newpage</span>
+<span class="k">\pagenumbering</span><span class="nb">{</span>arabic<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><span class="arithmatex">\(\rightarrow\)</span> 编译并核对文档（可能需要多次编译，下文不赘述）。</p>
+<p>文档的第一页长这样：</p>
+<p><img alt="p3" src="../images/latex-for-beginners-3.png" /></p>
+<p>第二页：</p>
+<p><img alt="p4" src="../images/latex-for-beginners-4.png" /></p>
+<h2 id="文字处理">文字处理<a class="headerlink" href="#文字处理" title="Permanent link">&para;</a></h2>
+<h3 id="中文字体支持">中文字体支持<a class="headerlink" href="#中文字体支持" title="Permanent link">&para;</a></h3>
+<p>阅读本文学习 LaTeX 的人，首要学会的自然是 LaTeX 的中文字体支持。事实上，让 LaTeX 支持中文字体有许多方法。在此我们仅给出最 <strong>简洁</strong> 的解决方案：使用 CTeX 宏包。只需要在文档的前导命令部分添加：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\usepackage</span><span class="na">[UTF8]</span><span class="nb">{</span>ctex<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>就可以了。在编译文档的时侯使用 <code>xelatex</code> 命令，因为它是支持中文字体的。</p>
+<h3 id="字体效果">字体效果<a class="headerlink" href="#字体效果" title="Permanent link">&para;</a></h3>
+<p>LaTeX 有多种不同的字体效果，在此列举一部分：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\textit</span><span class="nb">{</span>words in italics<span class="nb">}</span> <span class="k">\textsl</span><span class="nb">{</span>words slanted<span class="nb">}</span> <span class="k">\textsc</span><span class="nb">{</span>words in smallcaps<span class="nb">}</span> <span class="k">\textbf</span><span class="nb">{</span>words
+in bold<span class="nb">}</span> <span class="k">\texttt</span><span class="nb">{</span>words in teletype<span class="nb">}</span> <span class="k">\textsf</span><span class="nb">{</span>sans serif words<span class="nb">}</span> <span class="k">\textrm</span><span class="nb">{</span>roman
+words<span class="nb">}</span> <span class="k">\underline</span><span class="nb">{</span>underlined words<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>效果如下：</p>
+<p><img alt="p5" src="../images/latex-for-beginners-5.png" /></p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 在你的文档中添加更多的文本并尝试各种字体效果。</p>
+<h3 id="彩色字体">彩色字体<a class="headerlink" href="#彩色字体" title="Permanent link">&para;</a></h3>
+<p>为了让你的文档支持彩色字体，你需要使用包（package）。你可以引用很多包来增强 LaTeX 的排版效果。包引用的命令放置在文档的前导命令的位置（即放在 <code>\begin{document}</code> 命令之前）。使用 <code>\usepackage[options]{package}</code> 来引用包。其中 <strong>package</strong> 是包的名称，而 <strong>options</strong> 是指定包的特征的一些参数。</p>
+<p>使用 <code>\usepackage{color}</code> 后，我们可以调用常见的颜色：</p>
+<p><img alt="p6" src="../images/latex-for-beginners-6.png" /></p>
+<p>使用彩色字体的代码为</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="nb">{</span><span class="k">\color</span><span class="nb">{</span>colorname<span class="nb">}</span>text<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>其中 <strong>colorname</strong> 是你想要的颜色的名字，<strong>text</strong> 是你的彩色文本内容。注意到示例效果中的黄色与白色是有文字背景色的，这个我们同样可以使用 Color 包中的 <code>\colorbox</code> 命令来达到。用法如下：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\colorbox</span><span class="nb">{</span>colorname<span class="nb">}{</span>text<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><span class="arithmatex">\(\rightarrow\)</span> 在 <code>\begin{document}</code> 前输入 <code>\usepackage{color}</code>。<span class="arithmatex">\(\rightarrow\)</span> 在文档内容中输入 <code>{\color{red}fire}</code>。<span class="arithmatex">\(\rightarrow\)</span> 编译并核对 PDF 文档内容。</p>
+<p>单词 fire 应该是红色的。</p>
+<p>你也可以添加一些参数来调用更多的颜色，甚至自定义你需要的颜色。但这部分超出了本书的内容。如果想要获取更多关于彩色文本的内容请阅读 LaTeX Wikibook 的 <a href="http://en.wikibooks.org/wiki/LaTeX/Colors">Colors 章节</a>。</p>
+<h3 id="字体大小">字体大小<a class="headerlink" href="#字体大小" title="Permanent link">&para;</a></h3>
+<p>接下来我们列举一些 LaTeX 的字体大小设定命令：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>normal size words <span class="nb">{</span><span class="k">\tiny</span> tiny words<span class="nb">}</span> <span class="nb">{</span><span class="k">\scriptsize</span> scriptsize words<span class="nb">}</span>
+<span class="nb">{</span><span class="k">\footnotesize</span> footnotesize words<span class="nb">}</span> <span class="nb">{</span><span class="k">\small</span> small words<span class="nb">}</span> <span class="nb">{</span><span class="k">\large</span> large words<span class="nb">}</span>
+<span class="nb">{</span><span class="k">\Large</span> Large words<span class="nb">}</span> <span class="nb">{</span><span class="k">\LARGE</span> LARGE words<span class="nb">}</span> <span class="nb">{</span><span class="k">\huge</span> huge words<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>效果如下：</p>
+<p><img alt="p7" src="../images/latex-for-beginners-7.png" /></p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 尝试为你的文本调整字体大小。</p>
+<h3 id="段落缩进">段落缩进<a class="headerlink" href="#段落缩进" title="Permanent link">&para;</a></h3>
+<p>LaTeX 默认每个章节第一段首行顶格，之后的段落首行缩进。如果想要段落顶格，在要顶格的段落前加 <code>\noindent</code> 命令即可。如果希望全局所有段落都顶格，在文档的某一位置使用 <code>\setlength{\parindent}{0pt}</code> 命令，之后的所有段落都会顶格。</p>
+<h3 id="列表">列表<a class="headerlink" href="#列表" title="Permanent link">&para;</a></h3>
+<p>LaTeX 支持两种类型的列表：有序列表（enumerate）和无序列表（itemize）。列表中的元素定义为 <code>\item</code>。列表可以有子列表。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 输入下面的内容来生成一个有序列表套无序列表：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+  <span class="k">\item</span> First thing
+
+  <span class="k">\item</span> Second thing
+    <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+      <span class="k">\item</span> A sub-thing
+
+      <span class="k">\item</span> Another sub-thing
+    <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+
+  <span class="k">\item</span> Third thing
+<span class="k">\end</span><span class="nb">{</span>enumerate<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><span class="arithmatex">\(\rightarrow\)</span> 编译并核对 PDF 文档。</p>
+<p>列表长这样：</p>
+<p><img alt="p8" src="../images/latex-for-beginners-8.png" /></p>
+<p>可以使用方括号参数来修改无序列表头的标志。例如，<code>\item[-]</code> 会使用一个杠作为标志，你甚至可以使用一个单词，比如 <code>\item[One]</code>。</p>
+<p>下面的代码：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+  <span class="k">\item</span><span class="na">[-]</span> First thing
+
+  <span class="k">\item</span><span class="na">[+]</span> Second thing
+    <span class="k">\begin</span><span class="nb">{</span>itemize<span class="nb">}</span>
+      <span class="k">\item</span><span class="na">[Fish]</span> A sub-thing
+
+      <span class="k">\item</span><span class="na">[Plants]</span> Another sub-thing
+    <span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+
+  <span class="k">\item</span><span class="na">[Q]</span> Third thing
+<span class="k">\end</span><span class="nb">{</span>itemize<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>生成的效果为</p>
+<p><img alt="p9" src="../images/latex-for-beginners-9.png" /></p>
+<h3 id="注释和空格">注释和空格<a class="headerlink" href="#注释和空格" title="Permanent link">&para;</a></h3>
+<p>我们使用 % 创建一个单行注释，在这个字符之后的该行上的内容都会被忽略，直到下一行开始。</p>
+<p>下面的代码：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code>It is a truth universally acknowledged<span class="c">% Note comic irony</span>
+in the very first sentence , that a single man in possession of a good fortune,
+must be in want of a wife.
+</code></pre></div></td></tr></table></div>
+<p>生成的结果为</p>
+<p><img alt="p10" src="../images/latex-for-beginners-10.png" /></p>
+<p>多个连续空格在 LaTeX 中被视为一个空格。多个连续空行被视为一个空行。空行的主要功能是开始一个新的段落。通常来说，LaTeX 忽略空行和其他空白字符，两个反斜杠（<code>\\</code>）可以被用来换行。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 尝试在你的文档中添加注释和空行。</p>
+<p>如果你想要在你的文档中添加空格，你可以使用 <code>\vaspace{...}</code> 的命令。这样可以添加竖着的空格，高度可以指定。如 <code>\vspace{12pt}</code> 会产生一个空格，高度等于 12pt 的文字的高度。</p>
+<h3 id="特殊字符">特殊字符<a class="headerlink" href="#特殊字符" title="Permanent link">&para;</a></h3>
+<p>下列字符在 LaTeX 中属于特殊字符：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code># $ % ^ &amp; _ { } ~ \
+</code></pre></div></td></tr></table></div>
+<p>为了使用这些字符，我们需要在他们前面添加反斜杠进行转义：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\#</span> <span class="k">\$</span> <span class="k">\%</span> <span class="k">\^</span><span class="nb">{}</span> <span class="k">\&amp;</span> <span class="k">\_</span> <span class="k">\{</span> <span class="k">\}</span> <span class="k">\~</span><span class="nb">{}</span>
+</code></pre></div></td></tr></table></div>
+<p>注意在使用 <code>^</code> 和 <code>~</code> 字符的时侯需要在后面紧跟一对闭合的花括号，否则他们就会被解释为字母的上标，就像 <code>\^ e</code> 会变成 <span class="arithmatex">\(\mathrm {\hat{e}}\)</span>。上面的代码生成的效果如下：</p>
+<p><img alt="p11" src="../images/latex-for-beginners-11.png" /></p>
+<p>注意，反斜杠不能通过反斜杠转义（不然就变成了换行了），使用 <code>\textbackslash</code> 命令代替。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 输入代码来在你的文档中生成下面内容：</p>
+<p><img alt="p12" src="../images/latex-for-beginners-12.png" /></p>
+<p>询问专家或者查看本页面的 <a href="https://github.com/OI-wiki/OI-wiki/blob/master/docs/tools/latex.md?plain=1">源代码</a> 获取帮助。</p>
+<h2 id="表格">表格<a class="headerlink" href="#表格" title="Permanent link">&para;</a></h2>
+<p>表格（tabular）命令用于排版表格。LaTeX 默认表格是没有横向和竖向的分割线的——如果你需要，你得手动设定。LaTeX 会根据内容自动设置表格的宽度。下面的代码可以创一个表格：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>...<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>省略号会由定义表格的列的代码替换：</p>
+<ul>
+<li><code>l</code> 表示一个左对齐的列；</li>
+<li><code>r</code> 表示一个右对齐的列；</li>
+<li><code>c</code> 表示一个向中对齐的列；</li>
+<li><code>|</code> 表示一个列的竖线；</li>
+</ul>
+<p>例如，<code>{lll}</code> 会生成一个三列的表格，并且保存向左对齐，没有显式的竖线；<code>{|l|l|r|}</code> 会生成一个三列表格，前两列左对齐，最后一列右对齐，并且相邻两列之间有显式的竖线。</p>
+<p>表格的数据在 <code>\begin{tabular}</code> 后输入：</p>
+<ul>
+<li><code>&amp;</code> 用于分割列；</li>
+<li><code>\\</code> 用于换行；</li>
+<li><code>\hline</code> 表示插入一个贯穿所有列的横着的分割线；</li>
+<li><code>\cline{1-2}</code> 会在第一列和第二列插入一个横着的分割线。</li>
+</ul>
+<p>最后使用 <code>\end{tabular}</code> 结束表格。举一些例子：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span>
+<span class="normal">16</span>
+<span class="normal">17</span>
+<span class="normal">18</span>
+<span class="normal">19</span>
+<span class="normal">20</span>
+<span class="normal">21</span>
+<span class="normal">22</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>|l|l|<span class="nb">}</span>
+  Apples       <span class="nb">&amp;</span> Green  <span class="k">\\</span>
+  Strawberries <span class="nb">&amp;</span> Red    <span class="k">\\</span>
+  Orange       <span class="nb">&amp;</span> Orange <span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>rc<span class="nb">}</span>
+  Apples              <span class="nb">&amp;</span> Green  <span class="k">\\</span>
+  <span class="k">\hline</span>
+  Strawberries        <span class="nb">&amp;</span> Red    <span class="k">\\</span>
+  <span class="k">\cline</span><span class="nb">{</span>1-1<span class="nb">}</span> Oranges <span class="nb">&amp;</span> Orange <span class="k">\\</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+
+<span class="k">\begin</span><span class="nb">{</span>tabular<span class="nb">}{</span>|r|l|<span class="nb">}</span>
+  <span class="k">\hline</span>
+  8              <span class="nb">&amp;</span> here&#39;s <span class="k">\\</span>
+  <span class="k">\cline</span><span class="nb">{</span>2-2<span class="nb">}</span> 86 <span class="nb">&amp;</span> stuff  <span class="k">\\</span>
+  <span class="k">\hline</span>
+  <span class="k">\hline</span>
+  2008           <span class="nb">&amp;</span> now    <span class="k">\\</span>
+  <span class="k">\hline</span>
+<span class="k">\end</span><span class="nb">{</span>tabular<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>效果如下：</p>
+<p><img alt="p13" src="../images/latex-for-beginners-13.png" /></p>
+<h3 id="实践">实践<a class="headerlink" href="#实践" title="Permanent link">&para;</a></h3>
+<p>尝试画出下列表格：</p>
+<p><img alt="p14" src="../images/latex-for-beginners-14.png" /></p>
+<h2 id="图表">图表<a class="headerlink" href="#图表" title="Permanent link">&para;</a></h2>
+<p>本章介绍如何在 LaTeX 文档中插入图表。这里我们需要引入 <strong>graphicx</strong> 包。图片应当是 PDF，PNG，JPEG 或者 GIF 文件。下面的代码会插入一个名为 myimage 的图片：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[h]
+  <span class="k">\centering</span>
+  <span class="k">\includegraphics</span><span class="na">[width=1\textwidth]</span><span class="nb">{</span>myimage<span class="nb">}</span>
+  <span class="k">\caption</span><span class="nb">{</span>Here is my image<span class="nb">}</span>
+  <span class="k">\label</span><span class="nb">{</span>image-myimage<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p><code>[h]</code> 是位置参数，<strong>h</strong> 表示把图表近似地放置在这里（如果能放得下）。有其他的选项：<strong>t</strong> 表示放在在页面顶端；<strong>b</strong> 表示放在在页面的底端；<strong>p</strong> 表示另起一页放置图表。你也可以添加一个 <strong>!</strong> 参数来强制放在参数指定的位置（尽管这样排版的效果可能不太好）。</p>
+<p><code>\centering</code> 将图片放置在页面的中央。如果没有该命令会默认左对齐。使用它的效果是很好的，因为图表的标题也是居中对齐的。</p>
+<p><code>\includegraphics{...}</code> 命令可以自动将图放置到你的文档中，图片文件应当与 TeX 文件放在同一目录下。</p>
+<p><code>[width=1\textwidth]</code> 是一个可选的参数，它指定图片的宽度——与文本的宽度相同。宽度也可以以厘米为单位。你也可以使用 <code>[scale=0.5]</code> 将图片按比例缩小（示例相当于缩小一半）。</p>
+<p><code>\caption{...}</code> 定义了图表的标题。如果使用了它，LaTeX 会给你的图表添加「Figure」开头的序号。你可以使用 <code>\listoffigures</code> 来生成一个图表的目录。</p>
+<p><code>\label{...}</code> 创建了一个可以供你引用的标签。</p>
+<h3 id="实践_1">实践<a class="headerlink" href="#实践_1" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\rightarrow\)</span> 在你文档的前导命令中添加 <code>\usepackage{graphicx}</code>。<span class="arithmatex">\(\rightarrow\)</span> 找到一张图片，放置在你的 <strong>LaTeX course</strong> 文件夹下。<span class="arithmatex">\(\rightarrow\)</span> 在你想要添加图片的地方输入以下内容：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>figure<span class="nb">}</span>[h!]
+  <span class="k">\centering</span>
+  <span class="k">\includegraphics</span><span class="na">[width=1\textwidth]</span><span class="nb">{</span>ImageFilename<span class="nb">}</span>
+  <span class="k">\caption</span><span class="nb">{</span>My test image<span class="nb">}</span>
+<span class="k">\end</span><span class="nb">{</span>figure<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>将 <strong>ImageFilename</strong> 替换为你的文件的名字（不包括后缀）。如果你的文件名有空格，就使用双引号包裹，比如 <code>"screen 20"</code>。</p>
+<p><span class="arithmatex">\(\rightarrow\)</span> 编译并核对文件。</p>
+<h2 id="公式">公式<a class="headerlink" href="#公式" title="Permanent link">&para;</a></h2>
+<p>使用 LaTeX 的主要原因之一是它可以方便地排版公式。我们使用数学模式来排版公式。</p>
+<h3 id="插入公式">插入公式<a class="headerlink" href="#插入公式" title="Permanent link">&para;</a></h3>
+<p>你可以使用一对 <code>$</code> 来启用数学模式，这可以用于撰写行内数学公式。例如 <code>$1+2=3$</code> 的生成效果是 <span class="arithmatex">\(1+2=3\)</span>。</p>
+<p>如果你想要行间的公式，可以使用 <code>$$...$$</code>（现在我们推荐使用 <code>\[...\]</code>，因为前者可能产生不良间距）。例如，<code>$$1+2=3$$</code> 的生产效果为</p>
+<div class="arithmatex">\[
+1+2=3
+\]</div>
+<p>如果是生成带标号的公式，可以使用 <code>\begin{equation}...\end{equation}</code>。例如：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>equation<span class="nb">}</span>
+  1+2=3
+<span class="k">\end</span><span class="nb">{</span>equation<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>生成的效果为：</p>
+<p><img alt="equation" src="../images/latex-equation.svg" /></p>
+<p>数字 6 代表的是章节的编号，仅当你的文档有设置章节时才会出现，比如 <strong>report</strong> 类型的文档。</p>
+<p>使用 <code>\begin{eqnarray}...\end{eqnarray}</code> 来撰写一组带标号的公式。例如：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\begin</span><span class="nb">{</span>eqnarray<span class="nb">}</span>
+  a <span class="nb">&amp;</span> = <span class="nb">&amp;</span> b + c <span class="k">\\</span>
+  <span class="nb">&amp;</span> = <span class="nb">&amp;</span> y - z
+<span class="k">\end</span><span class="nb">{</span>eqnarray<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>生成的效果为</p>
+<p><img alt="eqnarray" src="../images/latex-eqnarray.svg" /></p>
+<p>要撰写不标号的公式就在环境标志的后面添加 <code>*</code> 字符，如 <code>{equation*}</code>，<code>{eqnarray*}</code>。</p>
+<details class="warning">
+<summary>Warning</summary>
+<p>可以发现，使用 <code>eqnarray</code> 时，会出现等号周围的空隙过大之类的问题。</p>
+<p>可以使用 <code>amsmath</code> 宏包中的 <code>align</code> 环境：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\usepackage</span><span class="nb">{</span>amsmath<span class="nb">}</span>
+...
+<span class="k">\begin</span><span class="nb">{</span>align<span class="nb">}</span>
+  a <span class="nb">&amp;</span> = b + c <span class="k">\\</span>
+    <span class="nb">&amp;</span> = y - z
+<span class="k">\end</span><span class="nb">{</span>align<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>或在行间公式中使用 <code>aligned</code> 环境。它们的名字后面加上星号后，公式就不带标号了。</p>
+<p>详见 <a href="#更多阅读">更多阅读</a> 中第一篇资料的「4.4 多行公式」。</p>
+</details>
+<h3 id="数学符号">数学符号<a class="headerlink" href="#数学符号" title="Permanent link">&para;</a></h3>
+<p>尽管一些基础的符号可以直接键入，但大多数特殊符号需要使用命令来显示。</p>
+<p>本书只是数学符号使用的入门教程，LaTeX Wikibook 的数学符号章节是另一个更好更完整的教程。如果想要了解更多关于数学符号的内容请移步。如果你想找到一个特定的符号，可以使用 <a href="http://detexify.kirelabs.org">Detexfiy</a>，它可以识别手写字符。</p>
+<h4 id="上标和下标">上标和下标<a class="headerlink" href="#上标和下标" title="Permanent link">&para;</a></h4>
+<p>上标（Powers）使用 <code>^</code> 来表示，比如 <code>$n^2$</code> 生成的效果为 <span class="arithmatex">\(n^2\)</span>。</p>
+<p>下标（Indices）使用 <code>_</code> 表示，比如 <code>$2_a$</code> 生成的效果为 <span class="arithmatex">\(2_a\)</span>。</p>
+<p>如果上标或下标的内容包含多个字符，请使用花括号包裹起来。比如 <code>$b_{a-2}$</code> 的效果为 <span class="arithmatex">\(b_{a-2}\)</span>。</p>
+<h4 id="分数">分数<a class="headerlink" href="#分数" title="Permanent link">&para;</a></h4>
+<p>分数使用 <code>\frac{numerator}{denominator}</code> 命令插入。比如 <code>$$\frac{a}{3}$$</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\frac{a}{3}
+\]</div>
+<p>分数可以嵌套。比如 <code>$$\frac{y}{\frac{3}{x}+b}$$</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\frac{y}{\frac{3}{x}+b}
+\]</div>
+<h4 id="根号">根号<a class="headerlink" href="#根号" title="Permanent link">&para;</a></h4>
+<p>我们使用 <code>\sqrt{...}</code> 命令插入根号。省略号的内容由被开根的内容替代。如果需要添加开根的次数，使用方括号括起来即可。</p>
+<p>例如 <code>$$\sqrt{y^2}$$</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\sqrt{y^2}
+\]</div>
+<p>而 <code>$$\sqrt[x]{y^2}$$</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\sqrt[x]{y^2}
+\]</div>
+<h4 id="求和与积分">求和与积分<a class="headerlink" href="#求和与积分" title="Permanent link">&para;</a></h4>
+<p>使用 <code>\sum</code> 和 <code>\int</code> 来插入求和式与积分式。对于两种符号，上限使用 <code>^</code> 来表示，而下限使用 <code>_</code> 表示。</p>
+<p><code>$$\sum_{x=1}^5 y^z$$</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\sum_{x=1}^5y^z
+\]</div>
+<p>而 <code>$$\int_a^b f(x)$$</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\int_a^b f(x)
+\]</div>
+<h4 id="希腊字母">希腊字母<a class="headerlink" href="#希腊字母" title="Permanent link">&para;</a></h4>
+<p>我们可以使用反斜杠加希腊字母的名称来表示一个希腊字母。名称的首字母的大小写决定希腊字母的形态。例如</p>
+<ul>
+<li><code>$\alpha$</code>=<span class="arithmatex">\(\alpha\)</span></li>
+<li><code>$\beta$</code>=<span class="arithmatex">\(\beta\)</span></li>
+<li><code>$\delta, \Delta$</code>=<span class="arithmatex">\(\delta, \Delta\)</span></li>
+<li><code>$\pi, \Pi$</code>=<span class="arithmatex">\(\pi, \Pi\)</span></li>
+<li><code>$\sigma, \Sigma$</code>=<span class="arithmatex">\(\sigma, \Sigma\)</span></li>
+<li><code>$\phi, \Phi, \varphi$</code>=<span class="arithmatex">\(\phi, \Phi, \varphi\)</span></li>
+<li><code>$\psi, \Psi$</code>=<span class="arithmatex">\(\psi, \Psi\)</span></li>
+<li><code>$\omega, \Omega$</code>=<span class="arithmatex">\(\omega, \Omega\)</span></li>
+</ul>
+<h3 id="实践_2">实践<a class="headerlink" href="#实践_2" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\rightarrow\)</span> 撰写代码来生成下列公式：</p>
+<p><img alt="p15" src="../images/latex-for-beginners-15.png" /></p>
+<p>如果需要帮助，可以查看本页面的 <a href="https://github.com/OI-wiki/OI-wiki/blob/master/docs/tools/latex.md?plain=1">源代码</a>。</p>
+<h2 id="参考文献">参考文献<a class="headerlink" href="#参考文献" title="Permanent link">&para;</a></h2>
+<h3 id="介绍_1">介绍<a class="headerlink" href="#介绍_1" title="Permanent link">&para;</a></h3>
+<p>LaTeX 可以轻松插入参考文献以及目录。本文会介绍如何使用另一个 BibTeX 文件来存储参考文献。</p>
+<h3 id="BibTeX-文件类型">BibTeX 文件类型<a class="headerlink" href="#BibTeX-文件类型" title="Permanent link">&para;</a></h3>
+<p>BibTeX 文件包含了所有你想要在你文档中引用的文献。它的文件后缀名为 <code>.bib</code>。它的名字应设置为你的 TeX 文档的名字。<code>.bib</code> 文件是文本文件。你需要将你的参考文献按照下列格式输入：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span>
+<span class="normal">6</span>
+<span class="normal">7</span>
+<span class="normal">8</span>
+<span class="normal">9</span></pre></div></td><td class="code"><div><pre><span></span><code>@article{
+    Birdetal2001,
+    Author = {Bird, R. B. and Smith, E. A. and Bird, D. W.},
+    Title = {The hunting handicap: costly signaling in human foraging strategies},
+    Journal = {Behavioral Ecology and Sociobiology},
+    Volume = {50},
+    Pages = {9-19},
+    Year = {2001} 
+}
+</code></pre></div></td></tr></table></div>
+<p>每一个参考文献先声名它的文献类型（reference type）。示例中使用的是 @article，其他的类型包括 @book，@incollection 用于引用一本书的中的章节，@inproceedings 用于引用会议论文。可以 <a href="http://en.wikibooks.org/wiki/LaTeX/Bibliography_Management">在此</a> 查看更多支持的类型。</p>
+<p>接下来的花括号内首先要列出一个引用键值（citation key）。必须保证你引用的文献的引用键值是不同的。你可以自定义键值串，不过使用第一作者名字加上年分会是一个表义清晰的选择。</p>
+<p>接下来的若干行包括文献的若干信息，格式如下：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">Text Only</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span></pre></div></td><td class="code"><div><pre><span></span><code>Field name = {field contents},
+</code></pre></div></td></tr></table></div>
+<p>你可以使用 LaTeX 命令来生成特殊的文字效果。比如意大利斜体可以使用 <code>\emph{Rattus norvegicus}</code>。</p>
+<p>对于需要大写的字母，请用花括号包裹起来。BibTeX 会自动把标题中除第一个字母外所有大写字母替换为小写。比如 <code>Dispersal in the contemporary United States</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\text{Dispersal in the contemporary united states}
+\]</div>
+<p>而 <code>Dispersal in the contemporary {U}nited {S}tates</code> 的生成效果为</p>
+<div class="arithmatex">\[
+\text{Dispersal in the contemporary United States}
+\]</div>
+<p>你可以手写 BibTeX 文件，也可以使用软件来生成。</p>
+<h3 id="插入文献列表">插入文献列表<a class="headerlink" href="#插入文献列表" title="Permanent link">&para;</a></h3>
+<p>使用下列命令在文档当前位置插入文献列表：</p>
+<div class="highlight"><table class="highlighttable"><tr><th colspan="2" class="filename"><span class="filename">TeX</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">\bibliographystyle</span><span class="nb">{</span>plain<span class="nb">}</span>
+<span class="k">\bibliography</span><span class="nb">{</span>references<span class="nb">}</span>
+</code></pre></div></td></tr></table></div>
+<p>参考文献写在 <code>references.bib</code> 里。</p>
+<h3 id="参考文献标注">参考文献标注<a class="headerlink" href="#参考文献标注" title="Permanent link">&para;</a></h3>
+<p>使用 <code>\cite{citationkey}</code> 来在你想要引用文献的地方插入一个标注。如果你不希望在正文中插入一个引用标注，但仍想要在文献列表中显示这次引用，使用 <code>\nocite{citationkey}</code> 命令。</p>
+<p>想要在引用中插入页码信息，使用方括号：<code>\cite[p. 215]{citationkay}</code>。</p>
+<p>要引用多个文献，使用逗号分隔：<code>\cite{citation01,citation02,citation03}</code>。</p>
+<h3 id="引用格式">引用格式<a class="headerlink" href="#引用格式" title="Permanent link">&para;</a></h3>
+<h4 id="数字标号引用">数字标号引用<a class="headerlink" href="#数字标号引用" title="Permanent link">&para;</a></h4>
+<p>LaTeX 包含了多种行内数字标号引用的格式：</p>
+<p><strong>Plain</strong> 方括号包裹数字的形式，如 <span class="arithmatex">\([1]\)</span>。文献列表按照第一作者的字母表顺序排列。每一个作者的名字是全称。</p>
+<p><strong>Abbrv</strong> 与 <strong>plain</strong> 是相同的，但作者的名字是缩写。</p>
+<p><strong>Unsrt</strong> 与 <strong>plain</strong> 是相同的，但文献列表的排序按照在文中引用的先后顺序排列。</p>
+<p><strong>Alpha</strong> 与 <strong>plain</strong> 一样，但引用的标注是作者的名字与年份组合在一起，不是数字，如 <span class="arithmatex">\([Kop10]\)</span>。</p>
+<h4 id="作者日期引用">作者日期引用<a class="headerlink" href="#作者日期引用" title="Permanent link">&para;</a></h4>
+<p>如果你想使用作者日期的引用，使用 <strong>natbib</strong> 包。它使用 <code>\citep{...}</code> 命令来生成一个方括号标注，如 <span class="arithmatex">\([Koppe,2010]\)</span>，使用 <code>\citet{...}</code> 来生成一个标注，只把年份放到方括号里，如 <span class="arithmatex">\(Koppe [2010]\)</span>。<a href="http://mirror.ctan.org/macros/latex/contrib/natbib/natnotes.pdf">在此</a> 查看它的更多用法。</p>
+<p>Natbib 包也有三种格式：<strong>plainnat</strong>，<strong>abbrvnat</strong> 和 <strong>unsrtnat</strong>，他们与 <strong>plain</strong>，<strong>abbrv</strong> 和 <strong>unsrt</strong> 的效果是一样的。</p>
+<h4 id="其他引用格式">其他引用格式<a class="headerlink" href="#其他引用格式" title="Permanent link">&para;</a></h4>
+<p>如果你需要使用不同的格式，你需要在同一个文件夹下创建一个格式文件（<code>.bst</code> 文件），引用这个格式的时侯使用它的文件名调用 <code>\bibliographystyle{...}</code> 命令实现。</p>
+<h3 id="实践_3">实践<a class="headerlink" href="#实践_3" title="Permanent link">&para;</a></h3>
+<p><span class="arithmatex">\(\rightarrow\)</span> 在同一文件夹下新建一个同名的 BibTeX 文件，用正确的格式输入参考文献的信息。<span class="arithmatex">\(\rightarrow\)</span> 切换到 TeX 文档，并使用 <code>\cite</code>，<code>\bibliographystyle</code> 和 <code>\bibliograph</code> 命令来引用文献。<span class="arithmatex">\(\rightarrow\)</span> 编译 TeX 文件。<span class="arithmatex">\(\rightarrow\)</span> 切换到 BibTeX 文件，并编译（点击 <strong>Typeset</strong> 按扭）<span class="arithmatex">\(\rightarrow\)</span> 切换到 TeX 文件并编译它 <strong>两次</strong>，然后核对 PDF 文档。</p>
+<h2 id="更多阅读">更多阅读<a class="headerlink" href="#更多阅读" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p>一份（不太）简短的 LATEX 2ε 介绍 <a href="https://github.com/CTeX-org/lshort-zh-cn/releases/download/v6.02/lshort-zh-cn.pdf">https://github.com/CTeX-org/lshort-zh-cn/releases/download/v6.02/lshort-zh-cn.pdf</a> 或 112 分钟了解 LaTeX 2ε.</p>
+</li>
+<li>
+<p>LaTeX Project <a href="http://www.latex-project.org/">http://www.latex-project.org/</a> Official website - has links to documentation, information about installing LATEX on your own computer, and information about where to look for help.</p>
+</li>
+<li>
+<p>LaTeX Wikibook <a href="http://en.wikibooks.org/wiki/LaTeX/">http://en.wikibooks.org/wiki/LaTeX/</a> Comprehensive and clearly written, although still a work in progress. A downloadable PDF is also available.</p>
+</li>
+<li>
+<p>Comparison of TeX Editors on Wikipedia <a href="http://en.wikipedia.org/wiki/Comparison_of_TeX_editors">http://en.wikipedia.org/wiki/Comparison_of_TeX_editors</a> Information to help you to choose which L A TEX editor to install on your own computer.</p>
+</li>
+<li>
+<p>TeX Live <a href="http://www.tug.org/texlive/">http://www.tug.org/texlive/</a>"An easy way to get up and running with the TeX document production system". Available for Unix and Windows (links to MacTeX for MacOSX users). Includes the TeXworks editor.</p>
+</li>
+<li>
+<p>Workbook Source Files <a href="http://edin.ac/17EQPM1">http://edin.ac/17EQPM1</a> Download the .tex file and other files needed to compile this workbook.</p>
+</li>
+</ul>
+<p><strong>本文译自 <a href="https://web.archive.org/web/20220309055041/http://www.docs.is.ed.ac.uk/skills/documents/3722/3722-2014.pdf">http://www.docs.is.ed.ac.uk/skills/documents/3722/3722-2014.pdf</a></strong>, 依据其他文献略有修改。</p>
+<hr />
+<p>本页来源：<a href="https://oi-wiki.org">OI-Wiki</a></p>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+<!-- Comment system -->
+ 
+   
+<hr><blockquote class="page-copyright">
+  <span><i class="md-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m22.7 19-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.7C.4 7.1.9 10.1 2.9 12.1c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.4"/></svg></i>本页最近更新：2024/07/12</span></a><br>
+  <span><i class="md-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75z"/></svg></i>发现错误？想一起完善？ <a href="https://scnusw.online/edit-landing/?ref=/study/dse/latex.md" title="edit.link.title" class="page_edit_url" style="font-weight:bold">即刻编辑此页</a></span><br>
+  <span><i class="md-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M16 17v2H2v-2s0-4 7-4 7 4 7 4m-3.5-9.5A3.5 3.5 0 1 0 9 11a3.5 3.5 0 0 0 3.5-3.5m3.44 5.5A5.32 5.32 0 0 1 18 17v2h4v-2s0-3.63-6.06-4M15 4a3.4 3.4 0 0 0-1.93.59 5 5 0 0 1 0 5.82A3.4 3.4 0 0 0 15 11a3.5 3.5 0 0 0 0-7"/></svg></i>本页贡献者：</span><span class="page_contributors">OI-Wiki</span><br>
+  <span><i class="md-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10.08 10.86c.05-.33.16-.62.3-.86.3-.56.81-.85 1.5-.86.45 0 .86.2 1.15.49.28.31.47.74.47 1.17h1.8c-.02-.47-.11-.9-.3-1.3-.15-.38-.38-.72-.68-1-1.45-1.34-4.14-1.15-5.37.37-1.29 1.67-1.32 4.59-.01 6.26 1.21 1.49 3.86 1.7 5.3.37.31-.25.56-.56.76-.92.16-.36.27-.74.28-1.15H13.5c0 .21-.07.4-.16.57-.09.19-.21.34-.34.47-.33.26-.72.4-1.14.4-.36-.01-.66-.08-.89-.23a1.4 1.4 0 0 1-.59-.64c-.5-.9-.42-2.15-.3-3.14M12 2C6.5 2 2 6.5 2 12c.53 13.27 19.5 13.26 20 0 0-5.5-4.5-10-10-10m0 18c-4.41 0-8-3.59-8-8 .44-10.61 15.56-10.61 16 0 0 4.41-3.59 8-8 8"/></svg></i>本页全部内容在 <strong><a href="https://creativecommons.org/licenses/by-sa/4.0/deed.zh">CC BY-SA 4.0</a></strong> 协议之条款下提供，附加条款亦可能应用</span>
+</blockquote>
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="页脚" >
+        
+          
+          <a href="../pgrec/" class="md-footer__link md-footer__link--prev" aria-label="上一页: 保研篇">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                上一页
+              </span>
+              <div class="md-ellipsis">
+                保研篇
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../git/" class="md-footer__link md-footer__link--next" aria-label="下一页: Git">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                下一页
+              </span>
+              <div class="md-ellipsis">
+                Git
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright © 2024 华师手册
+    </div>
+  
+  
+</div>
+<div style="float:right" class="build_date_utc">
+    <a href="https://github.com/SCNU-SW/SCNU-SW-Online">
+      最近更新：<span id="build_date_utc">2025-02-07 09:45:54</span>
+    </a>
+</div>
+
+<script>
+    const utcElement = document.getElementById('build_date_utc');
+    const utcDate = new Date(utcElement.textContent + ' UTC');
+    utcElement.textContent = utcDate.toLocaleString();
+</script>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <!-- Progress indicator -->
+<div class="md-progress" data-md-component="progress" role="progressbar" aria-label="Loading progress"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "navigation.instant", "navigation.instant.progress", "navigation.top", "navigation.footer", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow", "content.action.edit", "content.code.copy"], "search": "../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}}</script>
+    
+    
+      <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
+      
+        <script src="../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.zhimg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
